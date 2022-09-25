@@ -19,8 +19,8 @@ spec:
           name: email-service
           ports:
             - containerPort: 8075
-            env:
-            - name: servername_eureka
-              value: "eureka-server"
+          env:
+          - name: servername_eureka
+            value: "eureka-server"
       hostname: localhost
       restartPolicy: Always

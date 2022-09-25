@@ -19,8 +19,8 @@ spec:
           name: chat-service
           ports:
             - containerPort: 8070
-            env:
-            - name: servername_eureka
-              value: "eureka-server"
+          env:
+          - name: servername_eureka
+            value: "eureka-server"
       hostname: localhost
       restartPolicy: Always

@@ -5,9 +5,10 @@ metadata:
     app: eureka-server
   name: eureka-server
 spec:
+  type: NodePort      
   ports:
     - name: "8761"
       port: 8761
       targetPort: 8761
-  selector:
+  selector:     
     app: eureka-server

@@ -15,7 +15,7 @@ spec:
         app: eureka-server
     spec:
       containers:
-        - image: ahhmedshs/project-eureka-server
+        - image: ahhmedhs/project-eureka-server
           name: eureka-server
           ports:
             - containerPort: 8761

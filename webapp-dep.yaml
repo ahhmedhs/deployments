@@ -14,7 +14,6 @@ spec:
       labels:
         app: webapp
     spec:
-      replicas: 1
       containers:
         - image: ahhmedhs/project-webapp
           name: webapp
