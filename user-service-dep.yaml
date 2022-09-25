@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: user-service
+  name: user-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-service
+  template:
+    metadata:
+      labels:
+        app: user-service
+    spec:
+      containers:
+        - image: ahhmedhs/project-user-service
+          name: user-service
+          ports:
+            - containerPort: 8081
+          env:
+            - name: servername_eureka
+              value: "eureka-server"
+            - name: servername_mongodb
+              value: "mongodb"
+      hostname: localhost
+      restartPolicy: Always
